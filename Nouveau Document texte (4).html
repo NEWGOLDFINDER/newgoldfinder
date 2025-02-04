@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Moderne</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+            color: #343a40;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #212529;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            padding: 15px;
+            text-align: center;
+            background-color: #f1f3f5;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>🌟 Galerie Moderne 🌟</h1>
+    <div class="gallery">
+        <div class="card">
+            <a href="https://example.com/photo1" target="_blank">
+                <img src="https://via.placeholder.com/400x300" alt="Photo 1">
+                <div class="caption">Évasion Nature</div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://example.com/photo2" target="_blank">
+                <img src="https://via.placeholder.com/400x300" alt="Photo 2">
+                <div class="caption">Coucher de Soleil</div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://example.com/photo3" target="_blank">
+                <img src="https://via.placeholder.com/400x300" alt="Photo 3">
+                <div class="caption">Ville Lumineuse</div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://example.com/photo4" target="_blank">
+                <img src="https://via.placeholder.com/400x300" alt="Photo 4">
+                <div class="caption">Voyage en Montagne</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
